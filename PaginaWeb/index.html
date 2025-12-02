@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adoptemos un Compañero</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <span class="brand" style="font-size:1.3rem;display:flex;align-items:center;gap:10px;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="7" cy="7" r="3" fill="#f97316"/><circle cx="17" cy="7" r="3" fill="#f97316"/><ellipse cx="12" cy="17" rx="7" ry="4" fill="#7c3aed"/><circle cx="12" cy="12" r="2" fill="#fff"/></svg>
+        Adoptemos un Compañero
+      </span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero adoption-hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>¿Y si adoptamos un amigo peludo?</h1>
+          <p class="big">Sarita, cuando vivas con el Kevin él va a necesitar un amigo peludo y un gatito sin pelos para sobrevivir.<br>Un gato o un perro puede llenar nuestro hogar de alegría, ternura y momentos inolvidables. <br><span class="highlight">¡Juntos podemos cambiar una vida!</span></p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#motivos">Ver motivos</a>
+            <a class="btn ghost" href="#frases">Frases motivadoras</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden>
+          <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?q=80&w=900&auto=format&fit=crop" alt="Gato y perro juntos" style="max-width:420px;border-radius:18px;box-shadow:0 10px 30px rgba(124,58,237,0.12);">
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="motivos">
+      <header class="section-header">
+        <h2>¿Por qué adoptar?</h2>
+      </header>
+      <ul class="motivos-list">
+        <li><span>❤️</span> Nos dan amor incondicional y compañía todos los días.</li>
+        <li><span>🏡</span> Transforman una casa en un verdadero hogar.</li>
+        <li><span>😺</span> Un gato ronroneando o un perro moviendo la cola es la mejor bienvenida.</li>
+        <li><span>🌱</span> Adoptar salva vidas y ayuda a reducir el abandono.</li>
+        <li><span>😊</span> Compartir responsabilidades y cuidados nos une más como pareja.</li>
+      </ul>
+    </section>
+
+    <section class="section alt-bg" id="frases">
+      <div class="container">
+        <header class="section-header">
+          <h2>Frases motivadoras</h2>
+        </header>
+        <div class="frases-grid">
+          <blockquote>“Un hogar no está completo sin el sonido de patitas.”</blockquote>
+          <blockquote>“Adoptar es regalar y recibir amor multiplicado.”</blockquote>
+          <blockquote>“El mejor amigo puede tener cuatro patas y mucho pelo.”</blockquote>
+          <blockquote>“Salvar una vida es el comienzo de una gran historia juntos.”</blockquote>
+          <blockquote>“La felicidad se mide en lamidos y ronroneos.”</blockquote>
+          <blockquote>“No se compra el amor, se adopta.”</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="galeria">
+      <header class="section-header">
+        <h2>Imagina nuestro futuro</h2>
+        <p class="muted">¿Te imaginas los momentos juntos?</p>
+      </header>
+      <div class="galeria-grid">
+        <div class="galeria-item">
+          <img src="C:\Users\VICTUS\Desktop\PaginaWeb\gato_sin_pelos.jpeg.jpeg" alt="Gato sin pelo" onclick="toggleDescripcion('desc-gato')" style="cursor:pointer;" />
+          <div class="descripcion" id="desc-gato" style="display:none;">
+            Gatito sin pelos muy bonito, hay que cuidarlo mucho y se parece al Bills de Dragon Ball, no tiene pelos así que no va a webiar por los pelos.
+          </div>
+        </div>
+        <div class="galeria-item">
+          <img src="C:\Users\VICTUS\Desktop\PaginaWeb\perro_beagle.jpeg.jpeg" alt="Perro Beagle" onclick="toggleDescripcion('desc-beagle')" style="cursor:pointer;" />
+          <div class="descripcion" id="desc-beagle" style="display:none;">
+            Esta es una mejor opción porque estos desgraciados son todo terreno, estos tienen mucha energía, se portan un poco mal, pero son muy regalones y juguetones, no hacen nunca caso y siempre quieren cariño, son muy porfiados pero son hermosos.
+          </div>
+        </div>
+        <div class="galeria-item">
+          <img src="C:\Users\VICTUS\Desktop\PaginaWeb\perro_salchicha.jpeg.jpeg" alt="Perro Salchicha" onclick="toggleDescripcion('desc-salchicha')" style="cursor:pointer;" />
+          <div class="descripcion" id="desc-salchicha" style="display:none;">
+            Perrito salchipapa, es un perrito muy regalon y mamón, se puede llegar a parecer un poco a mí en algunos aspectos pero son muy lindos, lo malo es que hay que cuidarles su columna porque son larguitos.
+          </div>
+        </div>
+      </div>
+      <script>
+      function toggleDescripcion(id) {
+        var el = document.getElementById(id);
+        el.style.display = (el.style.display === 'none' || el.style.display === '') ? 'block' : 'none';
+      }
+      </script>
+    </section>
+
+    <section class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <h2>¿Te animás?</h2>
+          <p class="big">Adoptar es un acto de amor. <br>¿Nos animamos juntos a dar el siguiente paso?</p>
+          <p class="muted">Si querés, podemos visitar juntos un refugio o buscar información sobre adopción responsable.</p>
+        </div>
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps?q=refugio+de+animales+las+condes+santiago+chile&output=embed" width="100%" height="220" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="section vignette-section">
+    <div class="container" style="display:flex;justify-content:center;">
+      <div class="vignette-card">
+        <img src="C:\Users\VICTUS\Desktop\PaginaWeb\WhatsApp Image 2025-11-25 at 22.44.49.jpeg" alt="Foto especial" class="vignette-img" />
+        <div class="vignette-message">
+          <h2>Gracias por aparecer en mi vida</h2>
+          <p>Espero que tengamos muchos momentos juntos y sigamos avanzando, te quiero mucho 🩷</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Adoptemos un Compañero</h3>
+        <p class="muted">“El amor no se compra, se adopta.”</p>
+      </div>
+      <nav>
+        <ul class="footer-links">
+          <li><a href="#motivos">Motivos</a></li>
+          <li><a href="#frases">Frases</a></li>
+          <li><a href="#galeria">Galería</a></li>
+        </ul>
+      </nav>
+      <div class="social muted">© 2025 — Para vos, con mucho amor 💜</div>
+    </div>
+  </footer>
+</body>
+</html>
